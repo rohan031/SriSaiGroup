@@ -1,6 +1,11 @@
 @media only screen and (min-width: 1024px) {
     * {
         font-family: "Montserrat", sans-serif;
+        box-sizing: border-box;
+    }
+
+    .bold {
+        font-weight: bold;
     }
 
 
@@ -14,7 +19,7 @@
         display: inline-flex;
         flex: auto;
         justify-content: flex-end;
-        color: #969696;
+        color: #161617;
     }
 
     #links li:last-child {
@@ -30,7 +35,6 @@
     a {
         text-decoration: none;
         color: inherit;
-        font-weight: bold;
     }
 
     #links li a:hover {
@@ -73,17 +77,17 @@
        flex: 65%;
    }
 
-   #text {
+   .text {
        text-align: center;
        font-size: 30px;
    }
 
-   #text p {
+   .text p {
         display: inline-block;
         position: relative;
    }
 
-   #text p:after {
+   .text p:after {
         content: "";
         height: 2px;
         width: 60%;
@@ -109,9 +113,45 @@
     }
 
     #upperSubComp a img, #lowerSubComp a img {
-        margin-right: 5%;
-        margin-left: 5%;
+        margin-right: 4%;
+        margin-left: 4%;
     }
+
+
+    /* About Us */
+    #aboutUS {
+        border: 2px solid black;
+        margin-top: 12.5%;
+        display: flex;
+    }
+
+    #aboutUsImg {
+        border: 2px solid saddlebrown;
+        margin-top: 2%;
+        margin-left: 1%;
+        flex: 25%;
+    }
+
+    #aboutUsCont {
+        border: 2px solid red;
+        flex: 75%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #aboutUsText {
+        border: 2px solid orange;
+        text-align: center;
+        font-size: 0.8em;
+        margin-top: 2%;
+    }
+
+    #aboutUsText p {
+        color: #808080;
+    }
+
+
+
 
 }
 
