@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
 <div id="container">
     <!-- Navbar -->
-    <div id="navbar">
-        <a href="index.html">
+    <div id="navbar"> <!-- this is navigation bar container -->
+        <a href="index.html"> <!-- linking main icon with homepage -->
             <img alt="Sri Sai Group" src="img/logo.png">
         </a>
 
-        <ul id="links">
+        <ul id="links"> <!-- Creating multiple links on the right side of the window -->
             <li>
                 <a href="#" class="bold">Business</a>
             </li>
@@ -39,49 +41,56 @@
     </div>
 
     <!-- Body -->
-    <div id="main" style="border: 2px solid black;">
-        <div id="parentComp">
-            <img alt="Sri Sai Group" src="img/blogo.png" height="380px" width="380px">
+    <div id="main"> <!-- this is the main body container -->
+        <div id="parentComp"> <!-- sri sai group icon -->
+            <img alt="Sri Sai Group" src="img/blogo.png" height="380vh" width="380vw">
         </div>
-        <div id="line"></div>
-        <div id="subComp" style="border: 2px solid black;">
-            <div class="text" style="border: 2px solid black;"><p>Our brands</p></div>
-<!--            todo image slide show-->
-            <div id="subCompCont" style="border: 2px solid black;">
-                <div id="upperSubComp">
-                    <a href="#" target="_blank">
-                        <img alt="ssd" src="img/ssdl.jfif">
-                    </a>
-                    <a href="http://www.mangalyagroup.in/" target="_blank">
-                        <img alt="mangalya logo" src="img/ml.png" width="300vw">
-                    </a>
-                    <a href="http://www.labrealty.in/" target="_blank">
-                        <img alt="Lab Logo" src="img/labl.png" height="90vh" width="200vw">
-                    </a>
-                </div>
-                <div id="lowerSubComp">
-                    <a href="https://shreesaishivdevelopers.com/about-shree-sai-shiv-developers/" target="_blank">
-                        <img alt="sri sai shiv" src="img/sssbl.png" height="120vh" width="120vw">
-                    </a>
-                    <a href="http://swentertainment.in/" target="_blank">
-                        <img alt="snow world" src="img/swl.png" height="90vh" width="300vw">
-                    </a>
+        <div id="line"></div> <!-- making line between parent("sri sai gruop") and sub companies -->
+        <div id="subComp"> <!-- this is contain sub companies -->
+            <div class="text"><p>Our brands</p></div> <!-- our brands text with underline -->
+            <div id="subCompCont"> <!-- sub companies images with automatic slideshow -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <a href="#" target="_blank">
+                            <img alt="ssd" src="img/ssdl.jfif">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="http://www.mangalyagroup.in/" target="_blank">
+                            <img alt="mangalya logo" src="img/ml.png" width="300vw">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="http://www.labrealty.in/" target="_blank">
+                            <img alt="Lab Logo" src="img/labl.png" height="90vh" width="200vw">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://shreesaishivdevelopers.com/about-shree-sai-shiv-developers/" target="_blank">
+                            <img alt="sri sai shiv" src="img/sssbl.png" height="120vh" width="120vw">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="http://swentertainment.in/" target="_blank">
+                            <img alt="snow world" src="img/swl.png" height="90vh" width="300vw">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
+
     <!-- about us -->
-    <div id="aboutUS">
-<!--todo image slideshow-->
-        <div id="aboutUsImg">
+    <div id="aboutUS"> <!-- this is about us container -->
+        <div id="aboutUsImg"> <!-- collage of company images -->
             <img alt="team" src="img/coll.png" width="500vw" height="300vh">
         </div>
 
-        <div id="aboutUsCont">
-            <div class="text" style="border: 2px solid black;"><p class="bold">About Us</p></div>
-            <div id="aboutUsText">
+        <div id="aboutUsCont"> <!-- about us text container -->
+            <div class="text"><p class="bold">About Us</p></div> <!-- about us heading with underline -->
+            <div id="aboutUsText"> <!-- main text for about us -->
                 <p>Sri Sai Group is among India's top private sector business houses serving a very satisfied customers across, realty, hospitality & entertainment, and Information technology, Media & Digital Marketing sectors.</p>
                 <p>Founded by the Shri Naresh Dhoundiyal, the Sri Sai Group positively influences the lives of the aspiring Indians across Delhi, Mumbai, Navi Mumbai, Noida, Greater Noida, Gaziabad & Ahemdabad.</p>
                 <p>The Sri Sai Group strongly believes that it has a pivotal role to play in shaping the destiny of our great nation. Through its various consumer-facing businesses, the Group provides a robust platform to every Indian to realize his/ her potential through its state-of-the-art products and services various sectors like Realty, Information Technology, Hospitality & Entertainment.
@@ -92,7 +101,8 @@
 
 </div>
 
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

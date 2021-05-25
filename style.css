@@ -11,14 +11,13 @@
 
     /* navigation bar */
     #navbar {
-        display: flex;
-        border-bottom: 5px solid #f5f5f5;
+        display: flex; /* to divide icon and links into left and right */
+        border-bottom: 5px solid #f5f5f5; /* to make bottom underline */
+        z-index: 9999;
     }
 
     #links {
-        display: inline-flex;
-        flex: auto;
-        justify-content: flex-end;
+        margin-left: auto; /* making links on the left */
         color: #161617;
     }
 
@@ -75,6 +74,7 @@
 
    #subComp {
        flex: 65%;
+        width: 50%;
    }
 
    .text {
@@ -98,6 +98,18 @@
         transform: translate(-50%);
     }
 
+   #subCompCont {
+       margin-right: 10%;
+       margin-left: 10%;
+       margin-top: 4%;
+   }
+
+   .item {
+       margin-right: 15%;
+       margin-left: 5%;
+   }
+
+    /* previous styling before slideshow
     #subCompCont {
         margin-top: 1%;
     }
@@ -116,34 +128,32 @@
         margin-right: 4%;
         margin-left: 4%;
     }
-
+    */
 
     /* About Us */
     #aboutUS {
-        border: 2px solid black;
         margin-top: 12.5%;
         display: flex;
     }
 
     #aboutUsImg {
-        border: 2px solid saddlebrown;
         margin-top: 2%;
         margin-left: 1%;
         flex: 25%;
     }
 
     #aboutUsCont {
-        border: 2px solid red;
         flex: 75%;
         margin-left: 2%;
         margin-right: 2%;
     }
 
     #aboutUsText {
-        border: 2px solid orange;
-        text-align: center;
         font-size: 0.8em;
         margin-top: 2%;
+        margin-right: 8%;
+        margin-left: 8%;
+        line-height: 1.6;
     }
 
     #aboutUsText p {
