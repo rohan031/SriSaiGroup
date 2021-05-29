@@ -35,17 +35,21 @@
         margin-right: 6vw;
     }
 
+    li a {
+        font-size: 1.2em;
+    }
+
     a {
         text-decoration: none;
         color: inherit;
     }
 
-    #links li a:hover {
+    #links li a:hover, #links li .active {
         position: relative;
         color: #161617;
     }
 
-    #links li a:hover::after {
+    #links li a:hover::after, #links li .active::after {
         content: "";
         height: 2px;
         width: 75%;
@@ -107,6 +111,10 @@
         transform: translate(-50%);
     }
 
+   .underline .space:after {
+       top: 2.2em;
+   }
+
    #subCompCont {
        margin-right: 10%;
        margin-left: 10%;
@@ -147,7 +155,7 @@
     }
 
     #aboutUsImg {
-        margin-top: 2%;
+        margin-top: 8.5%;
         margin-left: 1%;
         flex: 25%;
     }
@@ -159,7 +167,7 @@
     }
 
     #aboutUsText {
-        font-size: 0.8em;
+        font-size: 1em;
         margin-top: 2%;
         margin-right: 8%;
         margin-left: 8%;
@@ -194,7 +202,7 @@
     }
 
     #contactImg img {
-        height: 45vh;
+        height: 23vw;
         width: 30vw;
     }
 
@@ -218,12 +226,16 @@
         line-height: 2.5em;
     }
 
+    #queryForm textarea {
+        line-height: 2em;
+    }
+
     .half {
         width: 47%;
     }
 
     .full {
-        width: 97.5%;
+        width: 97.9%;
     }
 
     #getHead {
@@ -243,7 +255,7 @@
     .inpField {
         border: none;
         outline: none;
-        box-shadow: 2.5px 2.5px 3px #89CFF0, -1.5px 2.5px 3px #89CFF0;
+        box-shadow: 0 3px 5px #89CFF0;
     }
 
     .inpField::placeholder {
@@ -275,20 +287,86 @@
         padding-right: 14px;
     }
 
-    #social {
-        position: absolute;
-        z-index: 9999;
-        top: 25%;
-        right: 0;
-
-    }
-
     #footer p {
         color: #8f8f8f;
         text-align: center;
         width: 100%;
         font-size: 1.1em;
     }
+
+
+    /* community */
+    #community {
+        margin-top: 5%;
+    }
+
+    .textColor {
+        color: #808080;
+}
+
+    .compAbout {
+        display: flex;
+        margin-top: 8%;
+        margin-left: 5%;
+        margin-right: 4%;
+    }
+
+    .compAbout a:hover {
+        color: #161617;
+    }
+
+    .oddText {
+        margin-left: 5%;
+    }
+
+    .even {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .evenText {
+        margin-right: 5%;
+    }
+
+    .evenImg {
+        margin-right: 3%;
+    }
+
+    .evenText > div:first-child {
+        display: flex;
+    }
+
+    .evenText > div:first-child p {
+        margin-left: auto;
+    }
+
+
+    /* community images */
+    #sssd {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10%;
+    }
+
+    #mang {
+        margin-top: 20%;
+    }
+
+    #sw {
+        margin-top: 50%;
+
+    }
+
+    #lab {
+        margin-top: 50%;
+    }
+
+    #ssd {
+        margin-top: 50%;
+    }
+
+
 
 }
 
