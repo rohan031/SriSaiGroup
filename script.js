@@ -1,19 +1,39 @@
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    dots: true,
-    autoplay: true,
-    autoplayTimeout: 2500,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1250:{
-            items:3
-        }
-    }
-})
+$(document).ready(function() {
+
+    let $active = $("#bbusiness, #aaboutUs, #ccommunity");
+    $active.click(function () {
+        $active.addClass("active");
+        $active.removeClass("active");
+
+        $(this).addClass("active");
+    });
+
+    $("#community").mouseenter(function() {
+        $active.addClass("active");
+        $active.removeClass("active");
+
+        $("#ccommunity").addClass("active");
+    });
+
+    $("#aboutUS").mouseenter(function() {
+        $active.addClass("active");
+        $active.removeClass("active");
+
+        $("#aaboutUs").addClass("active");
+    });
+
+    $("#main").mouseenter(function() {
+        $active.addClass("active");
+        $active.removeClass("active");
+
+        $("#bbusiness").addClass("active");
+    });
+
+});
+
+
+
+
+
+
+

@@ -18,6 +18,10 @@
         display: flex; /* to divide icon and links into left and right */
         border-bottom: 5px solid #f5f5f5; /* to make bottom underline */
         z-index: 9999;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #ffffff;
     }
 
     #links {
@@ -64,7 +68,7 @@
    /* body */
    #main {
        display: flex;
-       margin-top: 7%;
+       margin-top: 14%;
    }
 
    #parentComp {
@@ -149,8 +153,14 @@
     */
 
     /* About Us */
+
+    #aboutUsLink {
+        margin-top: 15%;
+        border: 1px solid #ffffff;
+    }
+
     #aboutUS {
-        margin-top: 12.5%;
+        margin-top: 4%;
         display: flex;
     }
 
@@ -189,7 +199,7 @@
 
     #contactCont {
         display: flex;
-        margin-top: 2%;
+        margin-top: 5%;
     }
 
     #contactInfo {
@@ -278,7 +288,7 @@
 
 
     /* footer */
-    #footer {
+    #footerContactUs {
         position: fixed;
         bottom: 0;
         width: 100%;
@@ -287,7 +297,7 @@
         padding-right: 14px;
     }
 
-    #footer p {
+    #footerContactUs p {
         color: #8f8f8f;
         text-align: center;
         width: 100%;
@@ -296,13 +306,22 @@
 
 
     /* community */
+    #communityLink {
+        margin-top: 14%;
+        border: 1px solid #ffffff;
+    }
+
     #community {
-        margin-top: 5%;
+        margin-top: 3%;
     }
 
     .textColor {
         color: #808080;
 }
+
+    #compAboutOne {
+        margin-top: 3.5%;
+    }
 
     .compAbout {
         display: flex;
