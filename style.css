@@ -189,6 +189,11 @@
 
 
     /* contact us */
+    #contactUs {
+        border: 1px solid #ffffff;
+        margin-top: 15%;
+    }
+
     .cText {
         font-size: 18px;
     }
