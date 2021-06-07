@@ -4,6 +4,10 @@
         box-sizing: border-box;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     .bold {
         font-weight: bold;
     }
@@ -153,7 +157,6 @@
     */
 
     /* About Us */
-
     #aboutUsLink {
         margin-top: 15%;
         border: 1px solid #ffffff;
@@ -389,6 +392,121 @@
     #ssd {
         margin-top: 65%;
     }
+
+    /* gallery */
+    #gallery {
+        border: 3px solid #0e8baf;
+    }
+
+    #galleryCont {
+        border: 3px solid black;
+    }
+
+    .subcomp {
+        margin-left: 3%;
+    }
+
+    .projects {
+        margin-left: 4%;
+    }
+
+    .ngSlideShow {
+        display: none;
+    }
+
+    .images {
+        position: fixed;
+        top: 8%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .gallUp {
+        position: absolute;
+        bottom: -14%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        width: auto;
+        color: #161617;
+        padding: 16px;
+        font-weight: bold;
+        font-size: 35px;
+        transition: 0.6s ease;
+        user-select: none;
+        top: 50%;
+    }
+
+    .next {
+        right: -5.8%;
+        padding-left: 23px;
+    }
+
+    .prev {
+        left: -5.8%;
+        padding-right: 23px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: #9c9c9c;
+        color: #F0F8FF;
+        border-radius: 10px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    /* fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.0s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .5}
+        to {opacity: 1}
+    }
+
+    /* close */
+    .close {
+        position: absolute;
+        right: -5%;
+        top: 0;
+        width: 32px;
+        height: 32px;
+        opacity: 0.3;
+    }
+    .close:hover {
+        opacity: 1;
+    }
+    .close:before, .close:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: #333;
+    }
+    .close:before {
+        transform: rotate(45deg);
+    }
+    .close:after {
+        transform: rotate(-45deg);
+    }
+
+
 
 
 

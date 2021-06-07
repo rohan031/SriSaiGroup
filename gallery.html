@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Gallery -->
+<div id="gallery">
+    <div id="galleryCont">
+        <div class="text underline bold center" style="border: 2px solid red;"><p class="ul">Gallery</p></div>
+
+        <div id="comp" style="border: 2px solid green;">
+            <div class="subcomp" style="border: 2px solid yellow">
+                <div class="text underline bold"><p class="ul">Mangalya</p></div>
+
+                <div class="projects" style="border: 2px solid red;">
+                    <img alt="Novena Green" id="nng" onclick="ng.show()" src="img/gallery/Mangalya/ng/ngLogo.svg" height="125vh" width="225vw">
+                    <div class="images hide" id="ng">
+
+                        <div class="ngSlideShow fade">
+                            <img alt="Novena gallery" src="img/gallery/Mangalya/ng/ng1.jpg">
+                        </div>
+                        <div class="ngSlideShow fade">
+                            <img alt="Novena gallery" src="img/gallery/Mangalya/ng/ng2.jpg">
+                        </div>
+                        <div class="ngSlideShow fade">
+                            <img alt="Novena gallery" src="img/gallery/Mangalya/ng/ng3.jpg">
+                        </div>
+                        <div class="ngSlideShow fade">
+                            <img alt="Novena gallery" src="img/gallery/Mangalya/ng/ng4.jpg">
+                        </div>
+
+                        <div  class="text underline bold center gallUp"><p class="ul">Novena Green</p></div>
+
+                        <a class="prev" onclick="ng.nextPrev(-1)">&#10094;</a>
+                        <a class="next" onclick="ng.nextPrev(1)">&#10095;</a>
+                        <a class="close" onclick="ng.hide()"></a>
+                    </div>
+                </div>
+                <div class="projects" style="border: 2px solid red;">
+                    <img alt="Ophira" id="oop" onclick="op.show()" src="img/gallery/Mangalya/op/opLogo.svg" height="125vh" width="225vw">
+                    <div class="images hide" id="op">
+
+                        <div class="opSlideShow fade">
+                            <img alt="Ophira" src="img/gallery/Mangalya/op/op1.jpg" width="1000px" height="562px">
+                        </div>
+                        <div class="opSlideShow fade">
+                            <img alt="Ophira" src="img/gallery/Mangalya/op/op2.jpg" width="1000px" height="562px">
+                        </div>
+                        <div class="opSlideShow fade">
+                            <img alt="Ophira" src="img/gallery/Mangalya/op/op3.jpg" width="1000px" height="562px">
+                        </div>
+                        <div class="opSlideShow fade">
+                            <img alt="Ophira" src="img/gallery/Mangalya/op/op4.jpg" width="1000px" height="562px">
+                        </div>
+                        <div class="opSlideShow fade">
+                            <img alt="Ophira" src="img/gallery/Mangalya/op/op5.jpg" width="1000px" height="562px">
+                        </div>
+                        <div class="opSlideShow fade">
+                            <img alt="Ophira" src="img/gallery/Mangalya/op/op6.jpg" width="1000px" height="562px">
+                        </div>
+
+                        <div  class="text underline bold center gallUp"><p class="ul">Ophira</p></div>
+
+                        <a class="prev prevNext" onclick="op.nextPrev(-1)">&#10094;</a>
+                        <a class="next prevNext" onclick="op.nextPrev(1)">&#10095;</a>
+                        <a class="close" onclick="op.hide()"></a>
+                    </div>
+                </div>
+
+                <div class="projects" style="border: 2px solid red;">
+                    <img alt="More" id="mmangMore" onclick="more.show()" src="img/gallery/Mangalya/op/opLogo.svg" height="125vh" width="225vw">
+                    <div class="images hide" id="mangMore">
+
+                        <div class="moreSlideShow fade">
+                            <img alt="more" src="img/gallery/Mangalya/more/more0.jpg" width="1000px" height="562px">
+                        </div>
+                        <div class="moreSlideShow fade">
+                            <img alt="more" src="img/gallery/Mangalya/more/more1.jpg" width="1000px" height="562px">
+                        </div>
+                        <div class="moreSlideShow fade">
+                            <img alt="more" src="img/gallery/Mangalya/more/more2.jpg" width="1000px" height="562px">
+                        </div>
+                        <div class="moreSlideShow fade">
+                            <img alt="more" src="img/gallery/Mangalya/more/more3.jpg" width="1000px" height="562px">
+                        </div>
+                        <div class="moreSlideShow fade">
+                            <img alt="more" src="img/gallery/Mangalya/more/more4.jpg" width="1000px" height="562px">
+                        </div>
+                        <div class="moreSlideShow fade">
+                            <img alt="more" src="img/gallery/Mangalya/more/more5.jpg" width="1000px" height="562px">
+                        </div>
+                        <div class="moreSlideShow fade">
+                            <img alt="more" src="img/gallery/Mangalya/more/more6.jpg" width="1000px" height="562px">
+                        </div>
+                        <div class="moreSlideShow fade">
+                            <img alt="more" src="img/gallery/Mangalya/more/more7.jpg" width="1000px" height="562px">
+                        </div>
+
+                        <div  class="text underline bold center gallUp"><p class="ul">More</p></div>
+
+                        <a class="prev prevNext" onclick="more.nextPrev(-1)">&#10094;</a>
+                        <a class="next prevNext" onclick="more.nextPrev(1)">&#10095;</a>
+                        <a class="close" onclick="more.hide()"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="slide.js"></script>
+</body>
+</html>
