@@ -8,6 +8,7 @@
         scroll-behavior: smooth;
     }
 
+
     .bold {
         font-weight: bold;
     }
@@ -475,7 +476,7 @@
     }
 
     @keyframes fade {
-        from {opacity: .5}
+        from {opacity: .4}
         to {opacity: 1}
     }
 
@@ -505,6 +506,19 @@
     .close:after {
         transform: rotate(-45deg);
     }
+
+
+    /* text inside image */
+    .imgText {
+        position: relative
+    }
+
+    .imgTextW {
+        position: absolute;
+        font-weight: bold;
+        color: #808080;
+    }
+
 
 
 

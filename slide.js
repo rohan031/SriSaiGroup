@@ -6,10 +6,13 @@ class slideShowImages {
         this.i = 0;
         this.slides = document.getElementsByClassName(imgClass);
         this.slideShow(this.slideIndex);
+        this.otherHide = document.getElementById("gallery");
     }
 
     show() {
         this.imgCont.style.display = "block";
+        this.otherHide.style.display = "none";
+        //document.body.style.backgroundImage = "url('img/gallery/gallery_background.jpg')";
     }
 
     slideShow(n) {
@@ -35,6 +38,8 @@ class slideShowImages {
 
     hide() {
         this.imgCont.style.display = "none";
+        this.otherHide.style.display = "block";
+        //document.body.style.background = "none";
     }
 }
 
@@ -42,6 +47,9 @@ class slideShowImages {
 let ng = new slideShowImages ("ng", "ngSlideShow"); // for novena green
 let op = new slideShowImages ("op", "opSlideShow"); // for opira
 let more = new slideShowImages ("mangMore", "moreSlideShow") // for more
+
+//lab realty
+let lab = new slideShowImages ("llab", "labSlideShow");
 
 
 
