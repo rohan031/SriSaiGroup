@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
     * {
         font-family: "Montserrat", sans-serif;
         box-sizing: border-box;
@@ -160,7 +160,7 @@
     /* About Us */
     #aboutUsLink {
         margin-top: 15%;
-        border: 1px solid #ffffff;
+        border: 1px solid transparent;
     }
 
     #aboutUS {
@@ -194,7 +194,7 @@
 
     /* contact us */
     #contactUs {
-        border: 1px solid #ffffff;
+        border: 1px solid transparent;
         margin-top: 15%;
     }
 
@@ -317,7 +317,7 @@
     /* community */
     #communityLink {
         margin-top: 14%;
-        border: 1px solid #ffffff;
+        border: 1px solid transparent;
     }
 
     #community {
@@ -339,8 +339,12 @@
         margin-right: 4%;
     }
 
+    .compAbout a {
+        color: #6699CC;
+    }
+
     .compAbout a:hover {
-        color: #161617;
+        color: #0066b2;
     }
 
     .oddText {
@@ -367,6 +371,7 @@
     .evenText > div:first-child p {
         margin-left: auto;
     }
+
 
 
     /* community images */
