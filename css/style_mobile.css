@@ -332,7 +332,7 @@
         font-size: 0.7em;
     }
 
-    /* close button */
+    /* close button
     .close {
         position: absolute;
         left: -20%;
@@ -349,7 +349,7 @@
         content: ' ';
         height: 33px;
         width: 3px;
-        background-color: #0d6e8e;
+        background-color: #0e8baf;
     }
     .close:before {
         transform: rotate(45deg);
@@ -357,6 +357,7 @@
     .close:after {
         transform: rotate(-45deg);
     }
+    */
 
     /* side bar */
     #sidebar {
@@ -366,7 +367,8 @@
         top: 0;
         background-color: #BCECFB;
         width: 0;
-        height: 100vh;
+        height: 100%;
+        overflow: auto;
         transition: 0.8s;
         border: 2px solid transparent;
     }
@@ -378,7 +380,25 @@
     }
 
     #container {
-        transition: 0.8s;
+        transition: 0.6s;
+    }
+
+    #sideClose {
+        position: relative;
+        font-weight: bold;
+        border: 2px solid #0e8baf;
+        padding-left: 4px;
+        padding-right: 4px;
+        border-radius: 8px;
+        top: 1%;
+        right: -75%;
+        color: #0e8baf;
+    }
+
+
+    .not-active {
+        pointer-events: none;
+        cursor: default;
     }
 
 }
