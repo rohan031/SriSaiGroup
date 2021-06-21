@@ -46,7 +46,7 @@ $(document).ready(function() {
     var aboutPos = $("#aboutUS").offset().top - funCall;
     var commPos = $("#community").offset().top - funCall;
     var bussPos = $("#main").offset().top - funCall;
-    //var gallPos = $("#gallery").offset().top - funCall;
+    var gallPos = $("#galleryCont").offset().top - funCall;
 
     $(window).on("scroll", function(){
        var y = window.pageYOffset;
@@ -57,7 +57,6 @@ $(document).ready(function() {
            $("#ccontactUs").addClass("active");
            $("#footerContactUs").fadeIn("slow");
        }
-       /*
        else if (y > gallPos) {
            $active.addClass("active");
            $active.removeClass("active");
@@ -65,7 +64,6 @@ $(document).ready(function() {
            $("#ggallery").addClass("active");
            $("#footerContactUs").fadeOut("slow");
        }
-       */
        else if (y > commPos) {
            $active.addClass("active");
            $active.removeClass("active");

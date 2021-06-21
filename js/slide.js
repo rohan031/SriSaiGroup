@@ -6,12 +6,15 @@ class slideShowImages {
         this.i = 0;
         this.slides = document.getElementsByClassName(imgClass);
         this.slideShow(this.slideIndex);
-        this.otherHide = document.getElementById("gallery");
+        this.otherHide = document.getElementById("container");
+        this.nav = document.getElementById("navbar");
     }
 
     show() {
         this.imgCont.style.display = "block";
-        this.otherHide.style.display = "none";
+        this.otherHide.style.opacity = "0.1";
+        this.otherHide.style.pointerEvents = "none";
+        this.nav.style.opacity = "0";
         //document.body.style.backgroundImage = "url('img/gallery/gallery_background.jpg')";
     }
 
@@ -38,18 +41,24 @@ class slideShowImages {
 
     hide() {
         this.imgCont.style.display = "none";
-        this.otherHide.style.display = "block";
+        this.otherHide.style.opacity = "1";
+        this.otherHide.style.pointerEvents = "auto";
+        this.nav.style.opacity = "1";
         //document.body.style.background = "none";
     }
 }
 
-// mangalya gallery
-let ng = new slideShowImages ("ng", "ngSlideShow"); // for novena green
-let op = new slideShowImages ("op", "opSlideShow"); // for opira
-let more = new slideShowImages ("mangMore", "moreSlideShow") // for more
+// group housing development
+let ghd = new slideShowImages("groupHousingDevelopment", "ghdSlideShow");
 
-//lab realty
-let lab = new slideShowImages ("llab", "labSlideShow");
+// brokerage
+let brkage = new slideShowImages("brokerage", "brokerageSlideShow");
+
+// entertainment and hospitality
+let ent = new slideShowImages("eah", "eahSlideShow");
+
+// information technology and media
+let it = new slideShowImages("itm", "itmSlideShow");
 
 
 

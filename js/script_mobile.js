@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-    let $side = $("#sidebar");
-    let $main = $("#container");
-    $("#sideOpen").click(function () {
+    let $side = $("#msidebar");
+    let $main = $("#mcontainer");
+    $("#msideOpen").click(function () {
         $side.css("display", "block");
         $side.css("width", "65%");
         $side.css("right", "0");
@@ -10,7 +10,7 @@ $(document).ready(function () {
         $main.addClass("not-active");
     });
 
-    $("#sideClose").click(function () {
+    $("#msideClose").click(function () {
         $side.css("width", "0");
         $side.css("right", "-100%");
         $main.css("opacity", "1");

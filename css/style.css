@@ -4,6 +4,14 @@
         box-sizing: border-box;
     }
 
+    #largeContainer {
+        display: block;
+    }
+
+    #smallContainer {
+        display: none;
+    }
+
     html {
         scroll-behavior: smooth;
     }
@@ -15,6 +23,10 @@
 
     p {
         line-height: 1.6;
+    }
+
+    #container {
+        transition: 0.3s;
     }
 
 
@@ -401,71 +413,113 @@
 
     /* gallery */
     #gallery {
-        margin-top: 5%;
-        border: 3px solid #0e8baf;
+        user-select: none;
+        margin-top: 14%;
+        border: 1px solid transparent;
     }
 
     #galleryCont {
-        border: 3px solid black;
+        margin-top: 3%;
     }
 
     .subcomp {
-        margin-left: 3%;
+        margin-top: 2%;
+        margin-left: 8%;
     }
 
     .projects {
-        margin-left: 4%;
+        margin-left: 8%;
+        user-select: none;
     }
 
-    .ngSlideShow {
-        display: none;
+    .projects img {
+        border: 3px solid #89CFF0;
+        border-radius: 25px;
+        padding: 1px;
     }
+
+    .projects p {
+        display: inline;
+    }
+
+
 
     .images {
         position: fixed;
-        top: 8%;
+        top: 6.5%;
         left: 50%;
         transform: translate(-50%, 0);
     }
 
+    .eimages {
+        position: fixed;
+        top: 4%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .fade img {
+        border-radius: 25px;
+    }
+
+
+    .gallSpace {
+        margin-top: 3%;
+    }
+
+
     .gallUp {
+        display: block;
         position: absolute;
-        bottom: -14%;
+        bottom: -11%;
         left: 50%;
         transform: translate(-50%);
+        width: 100%;
+    }
+
+    .egallUp {
+        display: block;
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
     }
 
     .prev, .next {
         cursor: pointer;
         position: absolute;
         width: auto;
-        color: #161617;
+        color: #8f8f8f;
         padding: 16px;
         font-weight: bold;
         font-size: 35px;
         transition: 0.6s ease;
         user-select: none;
-        top: 50%;
+        top: 45%;
     }
 
     .next {
-        right: -5.8%;
+        right: -8%;
         padding-left: 23px;
     }
 
     .prev {
-        left: -5.8%;
+        left: -8%;
         padding-right: 23px;
     }
 
     .prev:hover, .next:hover {
-        background-color: #9c9c9c;
-        color: #F0F8FF;
+        color: #161617;
         border-radius: 10px;
     }
 
     .hide {
         display: none;
+    }
+
+    .itext {
+        font-size: 1.5em;
     }
 
     /* fading animation */
@@ -477,20 +531,22 @@
     }
 
     @-webkit-keyframes fade {
-        from {opacity: .4}
+        from {opacity: .6}
         to {opacity: 1}
     }
 
     @keyframes fade {
-        from {opacity: .4}
+        from {opacity: .6}
         to {opacity: 1}
     }
+
+
 
     /* close */
     .close {
         position: absolute;
-        right: -5%;
-        top: 0;
+        right: -6%;
+        top: -4%;
         width: 32px;
         height: 32px;
         opacity: 0.3;
@@ -525,11 +581,421 @@
         color: #808080;
     }
 
-
-
-
-
-
 }
 
+
+
+/* for small screen devices */
+@media only screen and (max-width: 1024px) {
+    * {
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    #smallContainer {
+        display: block;
+    }
+
+    #largeContainer {
+        display: none;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .text {
+        font-size: 5vw;
+    }
+
+    .aText {
+        font-size: 6.5vw;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    /* header */
+    #mheader {
+        position: fixed;
+        width: 97%;
+        background-color: #ffffff;
+        top: 0;
+        z-index: 9999;
+        display: flex;
+        -webkit-box-shadow: 0 5px 7px -7px #808080;
+        -moz-box-shadow: 0 5px 7px -7px #808080;
+        box-shadow: 0 5px 7px -7px #808080;
+    }
+
+    #mheader img {
+        margin-left: 1%;
+        margin-top: 1.5%;
+        margin-bottom: 2%;
+    }
+
+    #mheader svg {
+        margin: 3% 3% 2% auto;
+    }
+
+    /* group company */
+    #mgroupCompLink {
+        margin-top: 12%;
+        border: 1px solid transparent;
+    }
+
+    #mgroupComp {
+        margin-top: 20%;
+    }
+
+    #mparentComp img {
+        width: 50vw;
+    }
+
+    #mline {
+        position: relative;
+        border-bottom: 3.5px solid #14a2cc;
+        margin-top: 10%;
+        width: 50vw;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    #msubComp {
+        margin-top: 12%;
+    }
+
+    .underline .ul {
+        position: relative;
+        display: inline-block;
+    }
+
+    .underline .ul:after {
+        content: "";
+        height: 2px;
+        width: 65%;
+        position: absolute;
+        background-color: #14a2cc;
+        left: 50%;
+        transform: translate(-50%);
+        top: 1.4em;
+    }
+
+    .underline .space:after {
+        top: 1.6em;
+    }
+
+    #msubCompLogo {
+        margin-top: 12%;
+    }
+
+    #mupperSubComp {
+        display: flex;
+    }
+
+    #mlabLogo, #msaiShivLogo, #mssdLogo {
+        flex: 33%;
+    }
+
+    #mlabLogo img, #mssdLogo img {
+        margin-top: 10%;
+    }
+
+    #mlowerSubComp {
+        display: flex;
+        margin-top: 12%;
+    }
+
+    #mmangalyaLogo, #msnowWorldLogo {
+        flex: 50%;
+    }
+
+    #mmangalyaLogo img {
+        margin-left: 15%;
+    }
+
+    #msnowWorldLogo img {
+        margin-top: 5%;
+        margin-right: 8%;
+    }
+
+    /* about us */
+    #maboutUsLink, #mcommunityLink {
+        margin-top: 18%;
+        border: 1px solid transparent;
+    }
+
+    #maboutUs, #mcommunity {
+        margin-top: 14%;
+    }
+
+    #maboutUsLogo, #mcommunityLogo {
+        margin-top: 8%;
+    }
+
+    #maboutUsLogo img {
+        width: 70vw;
+    }
+
+    #mcommunityLogo img {
+        width: 55vw;
+    }
+
+    #maboutUsText, #mcommunityText {
+        margin-top: 10%;
+        margin-right: auto;
+        margin-left: auto;
+        width: 75%;
+    }
+
+    #maboutUsText p, #mcommunityText p {
+        color: #808080;
+        line-height: 1.5;
+    }
+
+    /* company boxes */
+    .compBoxCont {
+        display: flex;
+        margin-top: 14%;
+    }
+
+    .compBox {
+        flex: 50%;
+        height: 33vw;
+        border-radius: 15px;
+        width: auto;
+        box-shadow: 0 2px 6px #B9D9EB;
+    }
+
+    .firstCompBox {
+        margin-left: 5%;
+        margin-right: 2.5%;
+
+    }
+
+    .secondCompBox {
+        margin-right: 5%;
+        margin-left: 2.5%;
+    }
+
+    .compBox img {
+        margin-top: 20%;
+        cursor: pointer;
+    }
+
+    #mssdCont {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 14%;
+        border-radius: 15px;
+        height: 33vw;
+        margin-left: 5%;
+        width: 42.5%;
+        box-shadow: 0 2px 6px #B9D9EB;
+    }
+
+    #mssdCont img {
+        margin-top: 15%;
+        cursor: pointer;
+    }
+
+    /* get in touch */
+    #mcontactFormLink {
+        margin-top: 22%;
+        border: 1px solid transparent;
+    }
+
+    #mcontactForm {
+        margin-top: 15%;
+    }
+
+    #mqueryForm {
+        margin-top: 8%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    #mqueryForm input, #mqueryForm textarea {
+        border-radius: 25px;
+        line-height: 2.5em;
+    }
+
+    #mqueryForm textarea {
+        line-height: 2em;
+    }
+
+    .half {
+        width: 46.5%;
+    }
+
+    .full {
+        width: 98.5%;
+    }
+
+    #mformBtn {
+        text-align: center;
+        padding: 1.5% 5.5%;
+        font-size: 1em;
+        background-color: #89CFF0;
+        border-radius: 8px;
+        border-color: #F0F8FF;
+        outline: none;
+    }
+
+    .inpField {
+        border: none;
+        outline: none;
+        box-shadow: 0 3px 5px #89CFF0;
+    }
+
+    .inpField::placeholder {
+        color: #9c9c9c;
+        font-size: 0.9em;
+    }
+
+    /* contact us */
+    #mcontactImg {
+        margin-top: 20%;
+    }
+
+    #mcontactImg img {
+        width: 75vw;
+    }
+
+    #mcontactInfoLink {
+        margin-top: 18%;
+        border: 1px solid transparent;
+    }
+
+    #mcontactInfo {
+        margin-top: 10%;
+    }
+
+    a {
+        text-decoration: none;
+        color: #161617;
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+    }
+
+    #mcontactText {
+        margin-top: 10%;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+    }
+
+    /* google maps */
+    #mmaps {
+        margin-top: 25%;
+        margin-bottom: -1%;
+    }
+
+    #mmaps iframe {
+        border: none;
+        width: 100%;
+        height: 60vw;
+    }
+
+    /* footer information */
+    #mfooterContactUs {
+        border: 3px solid transparent;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background-color: #f5f5f5;
+        padding-right: 14px;
+        z-index: 9999;
+    }
+
+    #mfooterContactUs p {
+        border: 2px solid transparent;
+        color: #8f8f8f;
+        text-align: center;
+        width: 100%;
+        font-size: 0.7em;
+    }
+
+    /* close button
+    .close {
+        position: absolute;
+        left: -20%;
+        top: 2%;
+        cursor: pointer;
+        height: 32px;
+        width: 32px;
+        opacity: 1;
+    }
+
+    .close:before, .close:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 3px;
+        background-color: #m0e8baf;
+    }
+    .close:before {
+        transform: rotate(45deg);
+    }
+    .close:after {
+        transform: rotate(-45deg);
+    }
+    */
+
+    /* side bar */
+    #msidebar {
+        position: fixed;
+        z-index: 99999;
+        right: -100%;
+        top: 0;
+        background-color: #BCECFB;
+        width: 0;
+        height: 100%;
+        overflow: auto;
+        transition: 0.8s;
+        border: 2px solid transparent;
+    }
+
+    .sidebarLinks {
+        font-size: 1.5em;
+        margin-left: 6%;
+        margin-top: 15%;
+    }
+
+    #mcontainer {
+        transition: 0.6s;
+    }
+
+    #msideClose {
+        position: relative;
+        font-weight: bold;
+        border: 2px solid #0e8baf;
+        padding-left: 4px;
+        padding-right: 4px;
+        border-radius: 8px;
+        top: 1%;
+        right: -75%;
+        color: #0e8baf;
+    }
+
+
+    .not-active {
+        pointer-events: none;
+        cursor: default;
+    }
+
+}
 

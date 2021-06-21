@@ -8,180 +8,657 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--
     <script type="text/javascript" src="js/defaultPageChange.js"></script>
+    -->
 </head>
 
 <body>
 
-<div id="container">
-    <!-- Navbar -->
-    <div id="navbar"> <!-- this is navigation bar container -->
-        <a href="index.html"> <!-- linking main icon with homepage -->
-            <img alt="Sri Sai Group" src="img/icons/logo.svg" style="margin-top: 5%;">
-        </a>
+<!-- for large screen devices -->
+<div id="largeContainer">
+    <div id="container">
+        <!-- Navbar -->
+        <div id="navbar"> <!-- this is navigation bar container -->
+            <a href="index.html"> <!-- linking main icon with homepage -->
+                <img alt="Sri Sai Group" src="img/icons/logo.svg" style="margin-top: 5%;">
+            </a>
 
-        <ul id="links"> <!-- Creating multiple links on the right side of the window -->
-            <li>
-                <a href="#" id="bbusiness" class="bold active">Home</a>
-            </li>
-            <li>
-                <a href="#aboutUsLink" id="aaboutUs" class="bold">About Us</a>
-            </li>
-            <li>
-                <a href="#communityLink" id="ccommunity" class="bold">Business</a>
-            </li>
-            <li>
-                <a href="#gallery" id="ggallery" class="bold">Gallery</a>
-            </li>
-            <li>
-                <a href="#contactUs" id="ccontactUs" class="bold">Contact Us</a>
-            </li>
-        </ul>
-    </div>
-
-    <!-- Body -->
-    <div id="main"> <!-- this is the main body container -->
-        <div id="parentComp"> <!-- sri sai group icon -->
-            <img alt="Sri Sai Group" src="img/icons/logo.svg" height="380vw" width="380vw">
+            <ul id="links"> <!-- Creating multiple links on the right side of the window -->
+                <li>
+                    <a href="#" id="bbusiness" class="bold active">Home</a>
+                </li>
+                <li>
+                    <a href="#aboutUsLink" id="aaboutUs" class="bold">About Us</a>
+                </li>
+                <li>
+                    <a href="#communityLink" id="ccommunity" class="bold">Business</a>
+                </li>
+                <li>
+                    <a href="#gallery" id="ggallery" class="bold">Gallery</a>
+                </li>
+                <li>
+                    <a href="#contactUs" id="ccontactUs" class="bold">Contact Us</a>
+                </li>
+            </ul>
         </div>
-        <div id="line"></div> <!-- making line between parent("sri sai gruop") and sub companies -->
-        <div id="subComp"> <!-- this is contain sub companies -->
-            <div class="text center underline"><p class="ul">Our brands</p></div> <!-- our brands text with underline -->
-            <div id="subCompCont"> <!-- sub companies images with automatic slideshow -->
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <a href="#" target="_blank">
-                            <img alt="ssd" src="img/ssdl.jfif">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="http://www.mangalyagroup.in/" target="_blank">
-                            <img alt="mangalya logo" src="img/ml.png" width="300vw">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="http://www.labrealty.in/" target="_blank">
-                            <img alt="Lab Logo" src="img/labl.png" height="90vw" width="200vw">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="https://shreesaishivdevelopers.com/about-shree-sai-shiv-developers/" target="_blank">
-                            <img alt="sri sai shiv" src="img/sssbl.png" style="height: 8vw; width: 8vw; margin-left: auto; margin-right: auto;">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="http://swentertainment.in/" target="_blank">
-                            <img alt="snow world" src="img/swl.png" height="80vw" width="300vw">
-                        </a>
+
+        <!-- Body -->
+        <div id="main"> <!-- this is the main body container -->
+            <div id="parentComp"> <!-- sri sai group icon -->
+                <img alt="Sri Sai Group" src="img/icons/logo.svg" height="380vw" width="380vw">
+            </div>
+            <div id="line"></div> <!-- making line between parent("sri sai gruop") and sub companies -->
+            <div id="subComp"> <!-- this is contain sub companies -->
+                <div class="text center underline"><p class="ul">Our brands</p></div> <!-- our brands text with underline -->
+                <div id="subCompCont"> <!-- sub companies images with automatic slideshow -->
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="#" target="_blank">
+                                <img alt="ssd" src="img/ssdl.jfif">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="http://www.mangalyagroup.in/" target="_blank">
+                                <img alt="mangalya logo" src="img/ml.png" width="300vw">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="http://www.labrealty.in/" target="_blank">
+                                <img alt="Lab Logo" src="img/labl.png" height="90vw" width="200vw">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://shreesaishivdevelopers.com/about-shree-sai-shiv-developers/" target="_blank">
+                                <img alt="sri sai shiv" src="img/sssbl.png" style="height: 8vw; width: 8vw; margin-left: auto; margin-right: auto;">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="http://swentertainment.in/" target="_blank">
+                                <img alt="snow world" src="img/swl.png" height="80vw" width="300vw">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+        <!-- about us -->
+        <div id="aboutUsLink">
+            <div id="aboutUS"> <!-- this is about us container -->
+                <div id="aboutUsImg"> <!-- collage of company images -->
+                    <img alt="team" src="img/icons/aboutUs.svg" width="500vw" height="300vh">
+                </div>
+
+                <div id="aboutUsCont"> <!-- about us text container -->
+                    <div class="text center underline"><p class="bold ul">About Us</p></div> <!-- about us heading with underline -->
+                    <div id="aboutUsText"> <!-- main text for about us -->
+                        <p>Sri Sai Group is among India's top private sector business houses serving a very satisfied customers across, realty, hospitality & entertainment, and Information technology, Media & Digital Marketing sectors.</p>
+                        <p>Founded by the Shri Naresh Dhoundiyal, the Sri Sai Group positively influences the lives of the aspiring Indians across Delhi, Mumbai, Navi Mumbai, Noida, Greater Noida, Gaziabad & Ahemdabad.</p>
+                        <p>The Sri Sai Group strongly believes that it has a pivotal role to play in shaping the destiny of our great nation. Through its various consumer-facing businesses, the Group provides a robust platform to every Indian to realize his/ her potential through its state-of-the-art products and services various sectors like Realty, Information Technology, Hospitality & Entertainment.
+                            The Group enjoys the unparalleled trust, faith and confidence of its customers & business associates/partners and is one of the Group in the country with a young, highly-trained and motivated workforce.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- community -->
+        <div id="communityLink">
+            <div id="community">
+                <div class="compAbout odd" id="compAboutOne"> <!-- 1 and 2 -->
+                    <div>
+                        <img id="mang" alt="mangalaya" src="img/ml.png">
+                        <img id="sssd" alt="sssd" src="img/sssbl.png">
+                    </div>
+                    <div class="oddText">
+                        <div class="text bold underline"><p class="ul">Group Housing Development</p></div>
+                        <div>
+                            <p class="textColor">Our construction companies, <a href="http://www.mangalyagroup.in/" class="bold" target="_blank">Mangalaya Buildtech pvt. ltd</a> & <a href="https://shreesaishivdevelopers.com/about-shree-sai-shiv-developers/" class="bold" target="_blank">Sri Sai Shiv Developers LLP</a>  aim to breathes life into your dreams, makes houses into homes, Homes into heaven. We do not merely construct buildings, we create homes for living. As rightly set out in our vision and mission statements our companies envisages entering into the elite group of top corporate in the field of real estate developments to fullfill the aims and objectives. A strong foundation and an equally strong commitment to the highest standard of quality and ethics has helped us establish ourselves as the premier constriction company of Delhi NCR. All our constriction is testimony for quality, timely delivery and trustworthy relationships with our customers, who get both living and breathing. The group is known for its outstanding quality, timely delivery and excellent customer services. The company is envisioned to re-define luxury and fine living. Projects located in Delhi NCR and Uttar Pradesh is inspired by Spanish style architecture with state-of-art amenities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="compAbout even"> <!-- 3 -->
+                    <div class="evenImg">
+                        <img id="lab" alt="lab" src="img/labl.png">
+                    </div>
+                    <div class="evenText">
+                        <div class="text bold underline"><p class="ul">Brokerage</p></div>
+                        <div dir="rtl">
+                            <p class="textColor"><a href="http://www.labrealty.in/" class="bold" target="_blank">LAB Realty Private Limited</a> is one of India's biggest platforms for Mortgages and Real estate and is one of India's fastest growing property search platforms. At LAB Realty Private Limited, we believe that commitment, honesty, trust, and dedication are the four pillars that can describe our values and ethics for working in the real estate industry. The company is incorporated with the sole purpose of providing cost-effective and best-in-class solutions in real estate. LAB Realty Private Limited platform offers the best integrated client experience. It is also built to provide assistance for the complete real-estate journey from discovering home loans, rental, search, transactions, post-sale services, and property management</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="compAbout odd"> <!-- 4 -->
+                    <div>
+                        <img id="sw" alt="Snow world" src="img/swl.png">
+                    </div>
+                    <div class="oddText">
+                        <div class="text bold underline"><p class="ul">Entertainment & Hospitality</p></div>
+                        <div>
+                            <p class="textColor">Started in 2011, <a href="http://swentertainment.in/" class="bold" target="_blank">Snow World Entertainment</a> has been operating at a rapid level for almost a decade. Today we have grown into a company with employee strength of 500. The group is putting all its efforts towards being a distinguished player in the amusement industry. The best in technology and concepts are being employed to take over the Indian market, reassuring visitors to step and experience beyond their imagination. Each of our projects is a unique testament to the World of Entertainment; be it - Snow World, The Game, XOXO – The Casual Lounge, Pink Wasabi and many more. The projects under the group umbrella are prudently outlined to provide a perfect blend of adrenaline rush and elation. Acts as a conduit for innovation and creativity in those essential sectors of businesses in India, which inherit a personal need of an Individual. The company is enthusiastic to implement the leading-edge technologies and products in strategic alliance with world-class international corporations, to create landmark destinations across the nation, in the field of Entertainment and Tourism.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="compAbout even"> <!-- 5 -->
+                    <div class="evenImg">
+                        <img id="ssd" alt="ssd" src="img/ssdl.jfif">
+                    </div>
+                    <div class="evenText">
+                        <div class="text bold underline"><p class="ul">Information Technology & Media</p></div>
+                        <div dir="rtl">
+                            <p class="textColor"><a href="#" class="bold" target="_blank">SSD</a> is the one stop business solution that helps you grow personally and professionally, that aims in connecting gaps in the society .
+                                We are a team of experts working in the field for last 4 years having experienced marketers, businessmen and a chain of investors that help you to reach to your goals. With a base of 10 Million + audience we have been working with 100 + artists
+                                <br>
+                                <ul class="textColor">
+                                    Our services
+                                    <li>Incubator</li>
+                                    <li>digital marketing</li>
+                                    <li>website & app development</li>
+                                    <li>Media House</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Gallery -->
+        <div id="gallery">
+            <div id="galleryCont">
+                <div class="text underline bold center"><p class="ul">Gallery</p></div>
+
+                <div id="comp">
+                    <div class="subcomp">
+
+                        <!-- group housing development -->
+                        <div class="text underline bold"><p class="ul">Group Housing Development</p></div>
+                        <!-- group housing development preview image -->
+                        <div class="projects">
+                            <img alt="group housing development" onclick="ghd.show()" src="img/gallery/Mangalaya/mang1.jpg" width="350vw">
+                            <p class="itext">&nbsp; & 13 more images...</p>
+                        </div>
+
+
+                        <!-- brokerage -->
+                        <div class="text underline bold gallSpace"><p class="ul">Brokerage</p></div>
+                        <!-- brokerage preview image -->
+                        <div class="projects">
+                            <img alt=brokerage" onclick="brkage.show()" src="img/gallery/LAB/lab1.jpg" width="350vw">
+                            <p class="itext">&nbsp; & 5 more images...</p>
+                        </div>
+
+
+                        <!-- Entertainment and hospitality -->
+                        <div class="text underline bold gallSpace"><p class="ul">Entertainment & Hospitality</p></div>
+                        <!-- entertainment and hospitality preview image-->
+                        <div class="projects">
+                            <img alt="entertainment and hospitality" onclick="ent.show()" src="img/gallery/SWE/split-img3.jpg" width="350vw">
+                            <p class="itext">&nbsp; & 13 more images...</p>
+                        </div>
+
+
+                        <!-- Information technology and media -->
+                        <div class="text underline bold gallSpace"><p class="ul">Information Technology & Media</p></div>
+                        <!-- information technology and media preview image-->
+                        <div class="projects">
+                            <img alt="entertainment and hospitality" onclick="it.show()" src="img/gallery/SWE/split-img3.jpg" width="350vw">
+                            <p class="itext">&nbsp; & 5 more images...</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Contact us -->
+        <div id="contactUs">
+            <div id="contactCont">
+                <div id="contactInfo">
+                    <div class="cText bold underline"><p class="ul space">Contact Us</p></div>
+
+                    <div id="contactText">
+                        <p>Corporate Office:<br>
+                            Sri Sai Business House<br>
+                            H-97, Sector-63, Noida, (U.P.)<br>
+                        </p>
+
+                        <div class="icon">
+                            <img alt="phone" src="img/icons/phoneCall.svg" height="24.59vw" width="35.76vw">&nbsp;&nbsp;<a href="tel: 0120-4229777">0120-4229777</a>
+                        </div>
+                        <br>
+                        <div class="icon">
+                            <img alt="mail" src="img/icons/email.svg" height="31.41vw" width="31.35vw">&nbsp;&nbsp;<a href="mailto: info@srisai.com">&nbsp;info@srisai.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contactImg">
+                    <img alt="contact image" src="img/icons/contactUs.svg">
+                </div>
+
+                <div id="contactForm">
+                    <div class="cText bold" id="getHead">Get in Touch</div>
+                    <div id="queryForm">
+                        <form>
+                            <input class="half inpField" type="text" maxlength="20" placeholder="  Your name" required> &nbsp;&nbsp;
+                            <input class="half inpField" type="tel" placeholder="  Your phone number" maxlength="10" pattern="[9876][0-9]{9}" required>
+                            <br><br>
+                            <input class="full inpField" type="email" placeholder="  Your email address" required>
+                            <br><br>
+                            <textarea rows="4" class="full inpField" placeholder="  Your query" required></textarea>
+                            <br><br>
+                            <button class="bold" id="formBtn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- google maps location -->
+        <div id="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.1094209285375!2d77.37563231508241!3d28.626482482420204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce57436243405%3A0x10e052557ef189b3!2sSri%20sai%20house!5e0!3m2!1sen!2sin!4v1622048703572!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+
+        <!-- footer information -->
+        <div id="footerContactUs">
+            <p>Copyright &copy; 2021 Sri Sai Consultancy & Infotech Services</p>
+        </div>
     </div>
 
+    <!-- gallery images -->
+    <div id="galleryImagesContainer">
 
+        <!-- group housing development -->
+        <div id="mangalyaImagesGallery">
+            <!-- group housing development gallery -->
+            <div class="images hide" id="groupHousingDevelopment">
 
-    <!-- about us -->
-    <div id="aboutUsLink">
-        <div id="aboutUS"> <!-- this is about us container -->
-            <div id="aboutUsImg"> <!-- collage of company images -->
-                <img alt="team" src="img/icons/aboutUs.svg" width="500vw" height="300vh">
+                <div class="ghdSlideShow fade">
+                    <img alt="group housing development image" src="img/gallery/Mangalaya/mang1.jpg">
+                </div>
+                <div class="ghdSlideShow fade">
+                    <img alt="group housing development image" src="img/gallery/Mangalaya/mang2.jpg">
+                </div>
+                <div class="ghdSlideShow fade">
+                    <img alt="group housing development image" src="img/gallery/Mangalaya/mang3.jpg">
+                </div>
+                <div class="ghdSlideShow fade">
+                    <img alt="group housing development image" src="img/gallery/Mangalaya/mang4.jpg">
+                </div>
+                <div class="ghdSlideShow fade">
+                    <img alt="group housing development image" src="img/gallery/Mangalaya/mang5.jpg" width="1150vw">
+                </div>
+                <div class="ghdSlideShow fade">
+                    <img alt="group housing development image" src="img/gallery/Mangalaya/mang6.jpg" width="1150vw">
+                </div>
+                <div class="ghdSlideShow fade">
+                    <img alt="group housing development image" src="img/gallery/Mangalaya/mang7.jpg" width="1150vw">
+                </div>
+                <div class="ghdSlideShow fade">
+                    <img alt="group housing development image" src="img/gallery/Mangalaya/mang8.jpg" width="1150vw">
+                </div>
+                <div class="ghdSlideShow fade">
+                    <img alt="group housing development image" src="img/gallery/Mangalaya/mang9.jpg" width="1150vw">
+                </div>
+                <div class="ghdSlideShow fade">
+                    <img alt="group housing development image" src="img/gallery/Mangalaya/mang10.jpg" width="950vw">
+                </div>
+                <div class="ghdSlideShow fade">
+                    <img alt="group housing development image" src="img/gallery/Mangalaya/mang11.jpg" width="750vw">
+                </div>
+                <div class="ghdSlideShow fade">
+                    <img alt="group housing development image" src="img/gallery/Mangalaya/mang12.jpg" width="750vw">
+                </div>
+                <!-- Images not working
+                <div class="ghdSlideShow fade">
+                    <img alt="group housing development image" src="img/gallery/Mangalaya/mang13.jpg">
+                </div>
+                <div class="ghdSlideShow fade">
+                    <img alt="group housing development image" src="img/gallery/Mangalaya/mang14.jpg">
+                </div>
+                -->
+
+                <!-- text and buttons -->
+                <div  class="itext underline bold center gallUp"><p class="ul">Group Housing Development</p></div>
+
+                <a class="prev" title="previous image" onclick="ghd.nextPrev(-1)">&#10094;</a>
+                <a class="next" title="next image" onclick="ghd.nextPrev(1)">&#10095;</a>
+                <a class="close" onclick="ghd.hide()"></a>
             </div>
+        </div>
 
-            <div id="aboutUsCont"> <!-- about us text container -->
-                <div class="text center underline"><p class="bold ul">About Us</p></div> <!-- about us heading with underline -->
-                <div id="aboutUsText"> <!-- main text for about us -->
+
+        <!-- brokerage -->
+        <div id="labRealtyImagesCont">
+            <!-- brokerage image gallery -->
+            <div class="images hide" id="brokerage">
+                <div class="brokerageSlideShow fade">
+                    <img alt="brokerage image" src="img/gallery/LAB/lab1.jpg" width="750vw">
+                </div>
+                <div class="brokerageSlideShow fade">
+                    <img alt="brokerage image" src="img/gallery/LAB/lab2.jpg" width="750vw">
+                </div>
+                <div class="brokerageSlideShow fade">
+                    <img alt="brokerage image" src="img/gallery/LAB/lab3.jpg" width="750vw">
+                </div>
+                <div class="brokerageSlideShow fade">
+                    <img alt="brokerage image" src="img/gallery/LAB/lab4.jpg" width="750vw">
+                </div>
+                <div class="brokerageSlideShow fade">
+                    <img alt="brokerage image" src="img/gallery/LAB/lab5.jpg" width="750vw">
+                </div>
+                <div class="brokerageSlideShow fade">
+                    <img alt="brokerage image" src="img/gallery/LAB/lab6.jpg" width="750vw">
+                </div>
+
+                <!-- text and buttons -->
+                <div  class="itext underline bold center gallUp"><p class="ul">Brokerage</p></div>
+
+                <a class="prev" title="previous image" onclick="brkage.nextPrev(-1)">&#10094;</a>
+                <a class="next" title="next image" onclick="brkage.nextPrev(1)">&#10095;</a>
+                <a class="close" onclick="brkage.hide()"></a>
+            </div>
+        </div>
+
+
+        <!-- entertainment and hospitality -->
+        <div id="snowWorldImgCont">
+            <!-- entertainment and hospitality image gallery -->
+            <div class="eimages hide" id="eah">
+                <div class="eahSlideShow fade">
+                    <img alt="entertainment and hospitality image" src="img/gallery/SWE/split-img3.jpg">
+                </div>
+                <div class="eahSlideShow fade">
+                    <img alt="entertainment and hospitality image" src="img/gallery/SWE/split-img4.jpg">
+                </div>
+                <div class="eahSlideShow fade">
+                    <img alt="entertainment and hospitality image" src="img/gallery/SWE/portfolio-1.jpg" width="600vw">
+                </div>
+                <div class="eahSlideShow fade">
+                    <img alt="entertainment and hospitality image" src="img/gallery/SWE/portfolio-2.jpg" width="600vw">
+                </div>
+                <div class="eahSlideShow fade">
+                    <img alt="entertainment and hospitality image" src="img/gallery/SWE/portfolio-3.jpg" width="600vw">
+                </div>
+                <div class="eahSlideShow fade">
+                    <img alt="entertainment and hospitality image" src="img/gallery/SWE/portfolio-4.jpg" width="600vw">
+                </div>
+                <div class="eahSlideShow fade">
+                    <img alt="entertainment and hospitality image" src="img/gallery/SWE/portfolio-5.jpg" width="600vw">
+                </div>
+                <div class="eahSlideShow fade">
+                    <img alt="entertainment and hospitality image" src="img/gallery/SWE/portfolio-7.jpg" width="600vw">
+                </div>
+                <div class="eahSlideShow fade">
+                    <img alt="entertainment and hospitality image" src="img/gallery/SWE/portfolio-8.jpg" width="600vw">
+                </div>
+                <div class="eahSlideShow fade">
+                    <img alt="entertainment and hospitality image" src="img/gallery/SWE/portfolio-9.jpg" width="600vw">
+                </div>
+                <div class="eahSlideShow fade">
+                    <img alt="entertainment and hospitality image" src="img/gallery/SWE/portfolio-11.jpg" width="600vw">
+                </div>
+                <div class="eahSlideShow fade">
+                    <img alt="entertainment and hospitality image" src="img/gallery/SWE/portfolio-12.jpg" width="600vw">
+                </div>
+                <div class="eahSlideShow fade">
+                    <img alt="entertainment and hospitality image" src="img/gallery/SWE/portfolio-13.jpg" width="600vw">
+                </div>
+                <!-- cont for collage image
+                <div class="eahSlideShow fade">
+                    <img alt="entertainment and hospitality image" src="img/gallery/SWE/">
+                </div>
+                -->
+
+                <!-- text and buttons -->
+                <div  class="itext underline bold center egallUp"><p class="ul">Entertainment & Hospitality</p></div>
+
+                <a class="prev" title="previous image" onclick="ent.nextPrev(-1)">&#10094;</a>
+                <a class="next" title="next image" onclick="ent.nextPrev(1)">&#10095;</a>
+                <a class="close" onclick="ent.hide()"></a>
+            </div>
+        </div>
+
+
+        <!-- information technology and media -->
+        <div id="ssdImgcont">
+            <!-- IT and Meda image gallery -->
+            <div class="images hide" id="itm">
+                <div class="itmSlideShow fade">
+                    <img alt="IT and media image" src="img/gallery/LAB/lab1.jpg" width="750vw">
+                </div>
+                <div class="itmSlideShow fade">
+                    <img alt="IT and media image" src="img/gallery/LAB/lab2.jpg" width="750vw">
+                </div>
+                <div class="itmSlideShow fade">
+                    <img alt="IT and media image" src="img/gallery/LAB/lab3.jpg" width="750vw">
+                </div>
+                <div class="itmSlideShow fade">
+                    <img alt="IT and media image" src="img/gallery/LAB/lab4.jpg" width="750vw">
+                </div>
+                <div class="itmSlideShow fade">
+                    <img alt="IT and media image" src="img/gallery/LAB/lab5.jpg" width="750vw">
+                </div>
+                <div class="itmSlideShow fade">
+                    <img alt="IT and media image" src="img/gallery/LAB/lab6.jpg" width="750vw">
+                </div>
+
+                <!-- text and buttons -->
+                <div  class="itext underline bold center gallUp"><p class="ul">IT & Media</p></div>
+
+                <a class="prev" title="previous image" onclick="it.nextPrev(-1)">&#10094;</a>
+                <a class="next" title="next image" onclick="it.nextPrev(1)">&#10095;</a>
+                <a class="close" onclick="it.hide()"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 2500,
+            responsive:{
+                0:{
+                    items:0
+                },
+                600:{
+                    items:2
+                },
+                1250:{
+                    items:3
+                }
+            }
+        });
+    </script>
+</div>
+
+
+<!-- for small screen devices -->
+<div id="smallContainer">
+    <div id="mcontainer">
+
+        <!-- header -->
+        <div id="mheader">
+            <img alt="sri sai logo" src="img/icons/logo.svg" width="43vw">
+            <svg id="msideOpen" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                 width="30" height="30"
+                 viewBox="0 0 172 172"
+                 style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><path d="" fill="none"></path><g fill="#0e8baf"><path d="M0,25.8v17.2h172v-17.2zM0,77.4v17.2h172v-17.2zM0,129v17.2h172v-17.2z"></path></g></g>
+            </svg>
+        </div>
+
+        <!-- main -->
+        <div id="mgroupCompLink">
+            <div id="mgroupComp">
+                <div id="mparentComp" class="center">
+                    <img alt="sri sai" src="img/icons/logo.svg">
+                    <div id="mline"></div>
+                </div>
+
+                <div id="msubComp">
+                    <div class="text underline center">
+                        <p class="ul">Our brands</p>
+
+                        <div id="msubCompLogo">
+                            <div id="mupperSubComp">
+                                <div id="mlabLogo">
+                                    <img alt="lab" src="img/labl.png" width="90vw">
+                                </div>
+
+                                <div id="msaiShivLogo">
+                                    <img alt="sai shiv developers" src="img/sssbl.png" width="60vw">
+                                </div>
+
+                                <div id="mssdLogo">
+                                    <img alt="ssd" src="img/ssdl.jfif" width="100vw">
+                                </div>
+
+                            </div>
+
+                            <div id="mlowerSubComp">
+
+                                <div id="mmangalyaLogo">
+                                    <img alt="mangalya" src="img/ml.png" width="150vw">
+                                </div>
+
+                                <div id="msnowWorldLogo">
+                                    <img alt="snow world entertainment" src="img/swl.png" width="150vw">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- about us -->
+        <div id="maboutUsLink">
+            <div id="maboutUs">
+                <div class="center underline aText">
+                    <p class="ul bold space">About Us</p>
+                </div>
+
+                <div id="maboutUsLogo" class="center">
+                    <img alt="about us" src="img/icons/aboutUs.svg">
+                </div>
+
+                <div id="maboutUsText">
                     <p>Sri Sai Group is among India's top private sector business houses serving a very satisfied customers across, realty, hospitality & entertainment, and Information technology, Media & Digital Marketing sectors.</p>
                     <p>Founded by the Shri Naresh Dhoundiyal, the Sri Sai Group positively influences the lives of the aspiring Indians across Delhi, Mumbai, Navi Mumbai, Noida, Greater Noida, Gaziabad & Ahemdabad.</p>
-                    <p>The Sri Sai Group strongly believes that it has a pivotal role to play in shaping the destiny of our great nation. Through its various consumer-facing businesses, the Group provides a robust platform to every Indian to realize his/ her potential through its state-of-the-art products and services various sectors like Realty, Information Technology, Hospitality & Entertainment.
-                        The Group enjoys the unparalleled trust, faith and confidence of its customers & business associates/partners and is one of the Group in the country with a young, highly-trained and motivated workforce.</p>
                 </div>
             </div>
         </div>
-    </div>
 
-
-    <!-- community -->
-    <div id="communityLink">
-        <div id="community">
-            <div class="compAbout odd" id="compAboutOne"> <!-- 1 and 2 -->
-                <div>
-                    <img id="mang" alt="mangalaya" src="img/ml.png">
-                    <img id="sssd" alt="sssd" src="img/sssbl.png">
+        <!-- community -->
+        <div id="mcommunityLink">
+            <div id="mcommunity">
+                <div class="center underline aText">
+                    <p class="ul bold space">Business</p>
                 </div>
-                <div class="oddText">
-                    <div class="text bold underline"><p class="ul">Group Housing Development</p></div>
-                    <div>
-                        <p class="textColor">Our construction companies, <a href="http://www.mangalyagroup.in/" class="bold" target="_blank">Mangalaya Buildtech pvt. ltd</a> & <a href="https://shreesaishivdevelopers.com/about-shree-sai-shiv-developers/" class="bold" target="_blank">Sri Sai Shiv Developers LLP</a>  aim to breathes life into your dreams, makes houses into homes, Homes into heaven. We do not merely construct buildings, we create homes for living. As rightly set out in our vision and mission statements our companies envisages entering into the elite group of top corporate in the field of real estate developments to fullfill the aims and objectives. A strong foundation and an equally strong commitment to the highest standard of quality and ethics has helped us establish ourselves as the premier constriction company of Delhi NCR. All our constriction is testimony for quality, timely delivery and trustworthy relationships with our customers, who get both living and breathing. The group is known for its outstanding quality, timely delivery and excellent customer services. The company is envisioned to re-define luxury and fine living. Projects located in Delhi NCR and Uttar Pradesh is inspired by Spanish style architecture with state-of-art amenities.</p>
+
+                <div id="mcommunityLogo" class="center">
+                    <img alt="community" src="img/icons/community.svg">
+                </div>
+
+                <div id="mcommunityText">
+                    <p>The Sri Sai Group strongly believes that it has a pivotal role to play in shaping the destiny of our great nation. Through its various consumer-facing businesses, the Group provides a robust platform to every Indian to realize his/ her potential through its state-of-the-art products and services various sectors like Realty, Information Technology, Hospitality & Entertainment. The Group enjoys the unparalleled trust, faith and confidence of its customers & business associates/partners and is one of the Group in the country with a young, highly-trained and motivated workforce.</p>
+                </div>
+
+                <div class="compBoxCont center">
+                    <div class="compBox center firstCompBox">
+                        <a href="http://www.labrealty.in/" target="_blank">
+                            <img alt="lab" src="img/icons/lab_logo.svg" width="100vw">
+                        </a>
+                    </div>
+                    <div class="compBox center secondCompBox">
+                        <a href="http://www.mangalyagroup.in/" target="_blank">
+                            <img alt="mangalya" src="img/icons/mangalya_logo.svg" width="145vw">
+                        </a>
                     </div>
                 </div>
-            </div>
 
-            <div class="compAbout even"> <!-- 3 -->
-                <div class="evenImg">
-                    <img id="lab" alt="lab" src="img/labl.png">
-                </div>
-                <div class="evenText">
-                    <div class="text bold underline"><p class="ul">Brokerage</p></div>
-                    <div dir="rtl">
-                        <p class="textColor"><a href="http://www.labrealty.in/" class="bold" target="_blank">LAB Realty Private Limited</a> is one of India's biggest platforms for Mortgages and Real estate and is one of India's fastest growing property search platforms. At LAB Realty Private Limited, we believe that commitment, honesty, trust, and dedication are the four pillars that can describe our values and ethics for working in the real estate industry. The company is incorporated with the sole purpose of providing cost-effective and best-in-class solutions in real estate. LAB Realty Private Limited platform offers the best integrated client experience. It is also built to provide assistance for the complete real-estate journey from discovering home loans, rental, search, transactions, post-sale services, and property management</p>
+                <div class="compBoxCont center">
+                    <div class="compBox center firstCompBox">
+                        <a href="#" target="_blank">
+                            <img alt="ssd" src="img/ssdl.jfif" width="100vw">
+                        </a>
+                    </div>
+                    <div class="compBox center secondCompBox">
+                        <a href="http://swentertainment.in/" target="_blank">
+                            <img alt="snow world entertainment" src="img/swl.png" width="150vw">
+                        </a>
                     </div>
                 </div>
-            </div>
 
-            <div class="compAbout odd"> <!-- 4 -->
-                <div>
-                    <img id="sw" alt="Snow world" src="img/swl.png">
-                </div>
-                <div class="oddText">
-                    <div class="text bold underline"><p class="ul">Entertainment & Hospitality</p></div>
-                    <div>
-                        <p class="textColor">Started in 2011, <a href="http://swentertainment.in/" class="bold" target="_blank">Snow World Entertainment</a> has been operating at a rapid level for almost a decade. Today we have grown into a company with employee strength of 500. The group is putting all its efforts towards being a distinguished player in the amusement industry. The best in technology and concepts are being employed to take over the Indian market, reassuring visitors to step and experience beyond their imagination. Each of our projects is a unique testament to the World of Entertainment; be it - Snow World, The Game, XOXO – The Casual Lounge, Pink Wasabi and many more. The projects under the group umbrella are prudently outlined to provide a perfect blend of adrenaline rush and elation. Acts as a conduit for innovation and creativity in those essential sectors of businesses in India, which inherit a personal need of an Individual. The company is enthusiastic to implement the leading-edge technologies and products in strategic alliance with world-class international corporations, to create landmark destinations across the nation, in the field of Entertainment and Tourism.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="compAbout even"> <!-- 5 -->
-                <div class="evenImg">
-                    <img id="ssd" alt="ssd" src="img/ssdl.jfif">
-                </div>
-                <div class="evenText">
-                    <div class="text bold underline"><p class="ul">Information Technology & Media</p></div>
-                    <div dir="rtl">
-                        <p class="textColor"><a href="#" class="bold" target="_blank">SSD</a> is the one stop business solution that helps you grow personally and professionally, that aims in connecting gaps in the society .
-                            We are a team of experts working in the field for last 4 years having experienced marketers, businessmen and a chain of investors that help you to reach to your goals. With a base of 10 Million + audience we have been working with 100 + artists
-                            <br>
-                            <ul class="textColor">
-                                Our services
-                                <li>Incubator</li>
-                                <li>digital marketing</li>
-                                <li>website & app development</li>
-                                <li>Media House</li>
-                            </ul>
-                        </p>
-                    </div>
+                <div id="mssdCont" class="center">
+                    <a href="https://shreesaishivdevelopers.com/about-shree-sai-shiv-developers/" target="_blank">
+                        <img alt="sai shiv developers" src="img/sssbl.png" width="90vw">
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
 
+        <!-- get in touch -->
+        <div id="mcontactFormLink">
+            <div id="mcontactForm">
+                <div class="center underline text">
+                    <p class="ul bold space">Get in Touch</p>
+                </div>
+                <div id="mqueryForm">
+                    <form>
+                        <input class="half inpField" type="text" maxlength="20" placeholder="  Your name" required> &nbsp;&nbsp;
+                        <input class="half inpField" type="tel" placeholder="  Your phone number" maxlength="10" pattern="[9876][0-9]{9}" required>
+                        <br><br>
+                        <input class="full inpField" type="email" placeholder="  Your email address" required>
+                        <br><br>
+                        <textarea rows="4" class="full inpField" placeholder="  Your query" required></textarea>
+                        <br><br>
+                        <button class="bold" id="mformBtn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
+        <!-- contact us -->
+        <div id="mcontactImg" class="center">
+            <img alt="contact image" src="img/icons/contactUs.svg">
+        </div>
 
+        <div id="mcontactInfoLink">
+            <div id="mcontactInfo">
+                <div class="center underline text">
+                    <p class="ul bold space">Contact Us</p>
+                </div>
 
-
-    <!-- Contact us -->
-    <div id="contactUs">
-        <div id="contactCont">
-            <div id="contactInfo">
-                <div class="cText bold underline"><p class="ul space">Contact Us</p></div>
-
-                <div id="contactText">
+                <div id="mcontactText">
                     <p>Corporate Office:<br>
                         Sri Sai Business House<br>
                         H-97, Sector-63, Noida, (U.P.)<br>
-                    </p>
+                    </p><br>
 
                     <div class="icon">
                         <img alt="phone" src="img/icons/phoneCall.svg" height="24.59vw" width="35.76vw">&nbsp;&nbsp;<a href="tel: 0120-4229777">0120-4229777</a>
@@ -192,66 +669,47 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div id="contactImg">
-                <img alt="contact image" src="img/icons/contactUs.svg">
-            </div>
 
-            <div id="contactForm">
-                <div class="cText bold" id="getHead">Get in Touch</div>
-                <div id="queryForm">
-                    <form>
-                        <input class="half inpField" type="text" maxlength="20" placeholder="  Your name" required> &nbsp;&nbsp;
-                        <input class="half inpField" type="tel" placeholder="  Your phone number" maxlength="10" pattern="[9876][0-9]{9}" required>
-                        <br><br>
-                        <input class="full inpField" type="email" placeholder="  Your email address" required>
-                        <br><br>
-                        <textarea rows="4" class="full inpField" placeholder="  Your query" required></textarea>
-                        <br><br>
-                        <button class="bold" id="formBtn">Submit</button>
-                    </form>
-                </div>
-            </div>
+        <!-- google maps location -->
+        <div id="mmaps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.1094209285375!2d77.37563231508241!3d28.626482482420204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce57436243405%3A0x10e052557ef189b3!2sSri%20sai%20house!5e0!3m2!1sen!2sin!4v1622048703572!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- footer information -->
+        <div id="mfooterContactUs">
+            <p>Copyright &copy; 2021 Sri Sai Consultancy & Infotech Services</p>
         </div>
     </div>
 
-    <!-- google maps location -->
-    <div id="maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.1094209285375!2d77.37563231508241!3d28.626482482420204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce57436243405%3A0x10e052557ef189b3!2sSri%20sai%20house!5e0!3m2!1sen!2sin!4v1622048703572!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-
-
-    <!-- footer information -->
-    <div id="footerContactUs">
-        <p>Copyright &copy; 2021 Sri Sai Consultancy & Infotech Services</p>
+    <!-- sidebar -->
+    <div id="msidebar">
+        <!--
+        <a id="sideClose" class="close" onclick="close()"></a> -->
+        <a id="msideClose" onclick="close()">Close</a>
+        <div class="sidebarLinks bold">
+            <a href="#mgroupCompLink">Home</a>
+        </div>
+        <div class="sidebarLinks bold">
+            <a href="#maboutUsLink">About Us</a>
+        </div>
+        <div class="sidebarLinks bold">
+            <a href="#mcommunityLink">Business</a>
+        </div>
+        <div class="sidebarLinks bold">
+            <a href="#mcontactFormLink">Get in Touch</a>
+        </div>
+        <div class="sidebarLinks bold">
+            <a href="#mcontactInfoLink">Contact</a>
+        </div>
     </div>
 
 </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="js/script_mobile.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript">
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:false,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 2500,
-        responsive:{
-            0:{
-                items:0
-            },
-            600:{
-                items:2
-            },
-            1250:{
-                items:3
-            }
-        }
-    });
-</script>
+<script type="text/javascript" src="js/slide.js"></script>
 </body>
 </html>
